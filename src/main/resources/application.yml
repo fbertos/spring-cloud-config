@@ -1,0 +1,15 @@
+info:
+ component: config-server
+
+server:
+ port: 8888
+
+spring:  
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations:${HOME}/workspace/spring-cloud-config/src/main/resources
+
+  profiles:
+    active: native          
